@@ -1,0 +1,25 @@
+# Dependencias locales
+node_modules/
+
+# Variables de entorno
+.env
+
+# Archivos de sistema / editor
+.DS_Store
+*.swp
+.vscode/
+
+# Carpeta de builds
+dist/
+build/
+
+# Logs
+*.log
+
+# Cachés de npm/yarn/pnpm
+.npm
+.yarn
+.pnp.*
+
+# Archivos temporales de Linux
+*.~
