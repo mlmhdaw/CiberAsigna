@@ -22,32 +22,36 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
 
 1. **Definir entidades y estructuras de datos principales**
    - [x] Identificar entidades clave (por ejemplo: Usuario, Registro de precipitaciones)
-   - [ ] Commit: "MH1: Entidades clave identificadas y documentadas"
+      > Commit: "FS02-MH1: Entidades clave identificadas y documentadas"
+      > bf0b058 (HEAD -> fase-02) MH1: Entidades clave identificadas y documentadas
    - [-] Identificar las relaciones entre entidades
-   - [ ] Commit: "MH1: "Relaciones conceptuales entre entidades definidas"
+      > Commit: "FS02-MH1: "Relaciones conceptuales entre entidades definidas"
+      >
    - [ ] Crear estructuras de datos y clases/objetos correspondientes
-   - [ ] Commit: "
-   - [ ] Commit: "MH1: Definidas entidades y estructuras de datos principales"
+      > Commit: "FS02-MH1: Estructuras de datos / clases básicas implementadas"
+      >
+   - [ ] Commit: "FS02-MH1: Definidas entidades y estructuras de datos principales"
+      >
 
-2. **Implementar funciones core para registro y gestión de datos**
+1. **Implementar funciones core para registro y gestión de datos**
    - [ ] Función para crear un registro de datos
-   - [ ] Commit: "MH1: Implementada función nuevo-registro"
+      > Commit: "FS02-MH1: Implementada función nuevo-registro"
    - [ ] Función para consultar/leer registros
-   - [ ] Commit: "MH1: Implementada función consulta-registro"
+      > Commit: "FS02-MH1: Implementada función consulta-registro"
    - [ ] Función para actualizar registros (opcional inicial)
-   - [ ] Commit: "MH1: Implementada función actualiza-registro"
+      > Commit: "FS02-MH1: Implementada función actualiza-registro"
    - [ ] Función para eliminar registros (opcional inicial)
-   - [ ] Commit: "MH1: Implementada función elimina-registro"
+   - [ ] Commit:"FS02-MH1: Implementada función elimina-registro"
 
-3. **Validar la lógica en local con datos de prueba**
+2. **Validar la lógica en local con datos de prueba**
    - [ ] Crear datos de prueba representativos
    - [ ] Ejecutar funciones con datos de prueba y verificar resultados
    - [ ] Ajustar funciones si hay errores
-   - [ ] Commit: "MH1: Validada lógica central con datos de prueba"
+   - [ ] Commit: "FS02-MH1: Validada lógica central con datos de prueba"
 
-4. **Consolidación del mini-hito**
+3. **Consolidación del mini-hito**
    - [ ] Verificar que todas las funciones y estructuras están operativas
-   - [ ] Commit final del mini-hito: "MH1 completado — Lógica central básica operativa"
+   - [ ] Commit final del mini-hito: "FS02-MH1 completado — Lógica central básica operativa"
 
 **Resultado esperado:** Lógica central operativa y comprobada con datos de ejemplo.
 
@@ -64,21 +68,21 @@ Conectar la interfaz con la lógica central y asegurar el flujo básico de inter
 1. **Conectar formularios con la lógica central**
    - [ ] Crear formularios de entrada en frontend
    - [ ] Vincular cada formulario con las funciones del núcleo funcional
-   - [ ] Commit: "MH2: Formularios conectados con la lógica central"
+   - [ ] Commit: "FS02-MH2: Formularios conectados con la lógica central"
 
 2. **Validar almacenamiento y presentación de datos**
    - [ ] Confirmar que los datos se guardan correctamente
    - [ ] Confirmar que los datos se muestran correctamente en la interfaz
-   - [ ] Commit: "MH2: Almacenamiento y presentación de datos verificados"
+   - [ ] Commit: "FS02-MH2: Almacenamiento y presentación de datos verificados"
 
 3. **Feedback básico al usuario**
    - [ ] Mostrar errores básicos (campos vacíos, datos incorrectos)
    - [ ] Mostrar confirmaciones al completar operaciones
-   - [ ] Commit: "MH2: Feedback básico implementado"
+   - [ ] Commit: "FS02-MH2: Feedback básico implementado"
 
 4. **Consolidación del mini-hito**
    - [ ] Verificar que el flujo completo funciona en local
-   - [ ] Commit final del mini-hito: "MH2 completado — Integración mínima frontend-backend"
+   - [ ] Commit final del mini-hito: "FS02-MH2 completado — Integración mínima frontend-backend"
 
 **Resultado esperado:** Flujo completo usable en local, desde entrada hasta salida.
 
@@ -95,19 +99,19 @@ Asegurar funcionamiento confiable del núcleo funcional y dejar documentación m
 1. **Pruebas unitarias y básicas de integración**
    - [ ] Escribir pruebas unitarias de funciones clave
    - [ ] Escribir pruebas básicas de integración entre frontend y backend
-   - [ ] Commit: "MH3: Pruebas unitarias e integración implementadas"
+   - [ ] Commit: "FS02-MH3: Pruebas unitarias e integración implementadas"
 
 2. **Documentar endpoints y funciones**
    - [ ] Documentar cada endpoint y función central
-   - [ ] Commit: "MH3: Endpoints y funciones documentadas"
+   - [ ] Commit: "FS02-MH3: Endpoints y funciones documentadas"
 
 3. **Actualizar README.md**
    - [ ] Instrucciones de uso del núcleo funcional
-   - [ ] Commit: "MH3: README actualizado con instrucciones del núcleo funcional"
+   - [ ] Commit: "FS02-MH3: README actualizado con instrucciones del núcleo funcional"
 
 4. **Consolidación del mini-hito**
    - [ ] Verificar que todas las pruebas y documentación están completas
-   - [ ] Commit final del mini-hito: "MH3 completado — Pruebas y documentación núcleo funcional"
+   - [ ] Commit final del mini-hito: "FS02-MH3 completado — Pruebas y documentación núcleo funcional"
 
 **Resultado esperado:** Núcleo funcional validado, documentado y listo para uso técnico inicial.
 
