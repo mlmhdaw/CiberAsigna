@@ -24,32 +24,38 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
    - [x] Identificar entidades clave (por ejemplo: Usuario, Registro de precipitaciones)
       > Commit: "FS02-MH1: Entidades clave identificadas y documentadas"
       > bf0b058 (HEAD -> fase-02) MH1: Entidades clave identificadas y documentadas
-   - [-] Identificar las relaciones entre entidades
-      > Commit: "FS02-MH1: "Relaciones conceptuales entre entidades definidas"
-      >
-   - [ ] Crear estructuras de datos y clases/objetos correspondientes
+   - [x] Identificar las relaciones entre entidades
+      > Commit: "FS02-MH1: Relaciones conceptuales entre entidades definidas"
+      > eabf635 (HEAD -> fase-02) FS02-MH1: Relaciones conceptuales entre entidades definidas
+      > Commit de actualización: "FS02-MH1: Entidades y relaciones finales; ciclo de vida y flujo de datos inicial definido"
+
+   - [-] Crear estructuras de datos y clases/objetos correspondientes
       > Commit: "FS02-MH1: Estructuras de datos / clases básicas implementadas"
       >
    - [ ] Commit: "FS02-MH1: Definidas entidades y estructuras de datos principales"
       >
 
-1. **Implementar funciones core para registro y gestión de datos**
+2. **Implementar funciones core para registro y gestión de datos**
    - [ ] Función para crear un registro de datos
       > Commit: "FS02-MH1: Implementada función nuevo-registro"
+      >
    - [ ] Función para consultar/leer registros
       > Commit: "FS02-MH1: Implementada función consulta-registro"
+      >
    - [ ] Función para actualizar registros (opcional inicial)
       > Commit: "FS02-MH1: Implementada función actualiza-registro"
+      >
    - [ ] Función para eliminar registros (opcional inicial)
-   - [ ] Commit:"FS02-MH1: Implementada función elimina-registro"
+      > Commit:"FS02-MH1: Implementada función elimina-registro"
+      >
 
-2. **Validar la lógica en local con datos de prueba**
+3. **Validar la lógica en local con datos de prueba**
    - [ ] Crear datos de prueba representativos
    - [ ] Ejecutar funciones con datos de prueba y verificar resultados
    - [ ] Ajustar funciones si hay errores
    - [ ] Commit: "FS02-MH1: Validada lógica central con datos de prueba"
 
-3. **Consolidación del mini-hito**
+4. **Consolidación del mini-hito**
    - [ ] Verificar que todas las funciones y estructuras están operativas
    - [ ] Commit final del mini-hito: "FS02-MH1 completado — Lógica central básica operativa"
 
