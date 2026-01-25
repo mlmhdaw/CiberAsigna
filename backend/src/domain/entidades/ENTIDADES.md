@@ -60,11 +60,11 @@
   - Mantener atributos mínimos al inicio; se pueden ampliar más adelante.
 - **Ejemplo de instancia:**
   - inicial:
-    `{id: 01, refe: null, refs: 00001, fece: 2026-01-25, fecs: null}`
-    `{rese: null, ress: null}`
+    `{id: 01, refe: null, refs: 00001, fece: 2026-01-25}`
+    `{fecs: null, rese: null, ress: null, est: null}`
   - final
     `{id: 01, refe: "2026001S6289", refs: 00001, fece: 2026-01-18, fecs: 2026-01-23}`
-    `{rese: "resumen de entrada que hace el superior", ress: "resumen de salida que hace el empleado"}`
+    `{rese: "resumen de entrada que hace el superior", ress: "resumen de salida que hace el empleado, est: null"}`
 
 ### 2.2 Entidad: Org    - organismo
 
@@ -115,16 +115,18 @@
     - Cerrado
   - Condiciones de transición
     - Asignado:
-      - fecha actual o futura
-      - estado "asignado"
+      - Fecha actual o futura
+      - Referencia de entrada no es null
+      - Resumen de entrada no es null
+      - Superior asigna el asunto a empleado: Desplegable para estado "asignado"
     - En curso:
       - Fecha de entrada cumplida (mínimo, actual)
-      - estado "en curso"
+      - Empleado se hace cargo del asunto: Desplegable para estado "en curso"
     - Cerrado:
       - Fecha de cierre no es null
       - referencia de salida no es null
       - resumen de salida no es null
-      - estado "cerrado"
+      - Empleado se concluye el asunto: Desplegable para estado "cerrado"
   - Campos existentes en cada momento
     - Al asignar el asunto
       - id
