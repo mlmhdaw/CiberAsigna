@@ -55,22 +55,33 @@
   - `[est]`   - estado actual del asunto
               - Tipo de dato: cadena
               - Valor inicial: null("Asignado", "en curso", "cerrado")
+  - `[fid]`   - id de la entidad func
+              - Tipo de dato: número
+              - Valor inicial: null
+  - `[oid]`   - id de la entidad org
+              - Tipo de dato: número
+              - Valor inicial: null
 - **Notas / Consideraciones:**
   - Toda la aplicación web se plantea en torno a esta entidad
   - Mantener atributos mínimos al inicio; se pueden ampliar más adelante.
 - **Ejemplo de instancia:**
   - inicial:
-    `{id: 01, refe: null, refs: 00001, fece: 2026-01-25}`
-    `{fecs: null, rese: null, ress: null, est: null}`
+    `{id: 01, refe: null, refs: 00001, fece: 2026-01-25,}`
+    `{fecs: null, rese: null, ress: null, est: null, fid: null, oid: null}`
   - final
-    `{id: 01, refe: "2026001S6289", refs: 00001, fece: 2026-01-18, fecs: 2026-01-23}`
-    `{rese: "resumen de entrada que hace el superior", ress: "resumen de salida que hace el empleado, est: null"}`
+    `{id: 01, refe: "2026001S6289", refs: 00001, fece: 2026-01-18, fecs: 2026-01-23,}`
+    `{rese: "resumen de entrada que hace el superior", ress: "resumen de salida que hace el empleado, est: "Cerrado",}`
+    `{fid: null, oid: null}`
 
 ### 2.2 Entidad: Org    - organismo
 
 - **Atributos mínimos:**
   - `[id]`    - número interno de organismo
+              - Tipo de dato: número autoincrementable (clave principal)
+  
   - `[nom]`   - nombre del organismo
+              - Tipo de dato: texto (máx 100 caracteres)
+              - Valor inicial: null
 - **Notas / Consideraciones:**
   - Representa el organismo que remite el asunto al func
   - Mantener atributos mínimos al inicio; se pueden ampliar más adelante.
@@ -81,10 +92,27 @@
 
 - **Atributos mínimos:**
   - `[id]`    - número interno de func
+              - Tipo de dato: número autoincrementable (clave principal)
+
   - `[ncp]`   - número de carnet profesional
+              - Tipo de dato: texto (6 caracteres)
+              - Valor inicial: null
+  
   - `[cat]`   - categoría profesional
+              - Tipo de dato: texto (máx 15 caracteres)
+              - Valor inicial: null
+
   - `[apel]`  - apellidos
+              - Tipo de dato: texto (máx 50 caracteres)
+              - Valor inicial: null
+  
   - `[nomb]`  - nombre
+              - Tipo de dato: texto (máx 25 caracteres)
+              - Valor inicial: null
+  
+  - `[hist]`  - Empleado que ya no pertenece al grupo
+              - Tipo de dato: booleano (true = ya no está)
+              - Valor inicial: false
 - **Notas / Consideraciones:**
   - Representa al empleado al que se le asignará el asunto dentro del sistema.
   - Mantener atributos mínimos al inicio; se pueden ampliar más adelante.

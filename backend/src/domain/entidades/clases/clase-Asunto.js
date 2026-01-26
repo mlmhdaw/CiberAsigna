@@ -11,6 +11,8 @@ class Asunto {
     this.rese = null;
     this.ress = null;
     this.est = null;
+    this.fid = null;
+    this.oid = null;
   }
 
   // método para actualizar `[est]` = "Asignado"
@@ -18,10 +20,14 @@ class Asunto {
     if (
       this.refe !== null && 
       this.rese !== null && 
+      this.fid  !== null &&
+      this.oid  !== null &&
       this.fece >= new Date().toISOString().slice(0,10)
-    ) {
+          ) {
       this.est = "Asignado";
     } else {
+      // Si falta algo, el asunto sigue existiendo en el array, 
+      // pero no se le permite cambiar el estado
       throw new Error ("No se puede asignar: faltan campos o fecha inválida");
     }
   }
@@ -56,6 +62,12 @@ class Asunto {
     }
   }
 
+  // método para registrar `[oid]` = id de la entidad org
+    // este método lo implementaré más adelante
+  
+  // método para asignar `[fid]` = id de la entidad func
+    // este método lo implementaré más adelante
+
   // convertir a objeto plano para cuando utilice base de datos (ahora todo en memoria)
   convertirPlano() {
     return {
@@ -66,7 +78,12 @@ class Asunto {
       fecs: this.fecs,
       rese: this.rese,
       ress: this.ress,
-      est: this.est
+      est: this.est,
+      fid: this.fid,
+      oid: this.oid
     };
   }
 }
+
+// instrucción para exportar la clase y que otros puedan verla y utilizarla (modularidad de código)
+module.exports = Asunto;

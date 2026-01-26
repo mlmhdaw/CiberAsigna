@@ -8,6 +8,7 @@ class Func {
     this.cat = null;
     this.apel = null;
     this.nom = null;
+    this.hist = false;
   }
 
   // convertir a objeto plano para cuando utilice base de datos (ahora todo en memoria)
@@ -17,7 +18,8 @@ class Func {
       ncp: this.ncp,
       cat: this.cat,
       apel: this.apel,
-      nom: this.nom
+      nom: this.nom,
+      hist: this.hist
     }
   }
 }
