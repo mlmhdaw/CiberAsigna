@@ -8,7 +8,7 @@ Tener la funcionalidad central de la aplicación operativa de extremo a extremo,
 
 ## Siguiente acción
 
-> Completar check 2 - punto 1 - mini-hito 1
+> Completar check 1 - punto 2 - mini-hito 1
 
 ---
 
@@ -28,25 +28,20 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
       > Commit: "FS02-MH1: Relaciones conceptuales entre entidades definidas"
       > eabf635 (HEAD -> fase-02) FS02-MH1: Relaciones conceptuales entre entidades definidas
       > Commit de actualización: "FS02-MH1: Entidades y relaciones finales; ciclo de vida y flujo de datos inicial definido"
-
-   - [-] Crear estructuras de datos y clases/objetos correspondientes
+      > 8e94ee7 (HEAD -> fase-02) FS02-MH1: Entidades y relaciones finales; ciclo de vida y flujo de datos inicial definido
+   - [x] Crear estructuras de datos y clases/objetos correspondientes
       > Commit: "FS02-MH1: Estructuras de datos / clases básicas implementadas"
-      >
-   - [ ] Commit: "FS02-MH1: Definidas entidades y estructuras de datos principales"
-      >
+      > 3c93e16 (HEAD -> fase-02) FS02-MH1: Estructuras de datos / clases básicas implementadas
 
 2. **Implementar funciones core para registro y gestión de datos**
-   - [ ] Función para crear un registro de datos
+   - [x] Función para crear un registro de datos
       > Commit: "FS02-MH1: Implementada función nuevo-registro"
-      >
-   - [ ] Función para consultar/leer registros
+      > 7fd2f21 (HEAD -> fase-02) FS02-MH1: Implementada función nuevo-registro
+   - [-] Función para consultar/leer registros
       > Commit: "FS02-MH1: Implementada función consulta-registro"
       >
    - [ ] Función para actualizar registros (opcional inicial)
       > Commit: "FS02-MH1: Implementada función actualiza-registro"
-      >
-   - [ ] Función para eliminar registros (opcional inicial)
-      > Commit:"FS02-MH1: Implementada función elimina-registro"
       >
 
 3. **Validar la lógica en local con datos de prueba**

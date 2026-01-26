@@ -19,7 +19,10 @@ const asuntos = [];
 // returns: muy útil porque si creo un array (p.e. const miAsunto = nuevo Asunto(...))
   // VS Code sabrá que tiene métodos (gracias al comentario @returns) como
   // asignarEstado() o convertirPlano()
-/**
+
+// -------------------------------- Creación de un nuevoRegistroAsunto --------------------------------
+
+ /**
  * Función para crear un nuevo registro de datos (Nuevo Asunto).
  * Implementa el patrón de fábrica para instanciar y persistir la entidad.
  * @param {Object} datos - Objeto con los parámetros de entrada.
@@ -32,9 +35,7 @@ const asuntos = [];
  * @returns {Asunto}                - La instancia del asunto recién creada.
  */
 
-// crear nuevo registro de datos (nuevo asunto)
-// paso 
-function nuevoRegistroAsunto({refe = null, fid = null, oid = null, rese = null, fece = null, est = null}) {
+function crearRegistroAsunto({refe = null, fid = null, oid = null, rese = null, fece = null, est = null}) {
     
   // generar el id único (último + 1)
   // Esto permite que el superior pueda recuperar su "borrador" más tarde
@@ -59,8 +60,36 @@ function nuevoRegistroAsunto({refe = null, fid = null, oid = null, rese = null, 
   return asunto;
 }
 
+// ---------------------------- Consulta / lectura de un asunto existente ----------------------------
+
+ /**
+ * Función para consultar/leer un registro de datos (Asunto creado previamente)
+ * Implementa el patrón de búsqueda o repositorio para localizar un elemento en un array (más tarde tabla)
+ * @param {Object} datos       - Objeto de búsqueda
+ * @param {string} datos.refe  - Referencia de entrada (elemento a buscar)
+ * @returns {Asunto|null}      - La instancia encontrada o null si no existe
+ */
+
+function consultarAsuntoRefe({refe}) {
+
+  // verificar que, antes de generar la búsqueda, se ha introducido un valor para `[refe]`
+  if (!refe) return null;
+  
+  // El método .find recorre el array (hasta el final o encontrar el elemento) 'asuntos'  
+  // y devuelve el elemento que cumpla la condición (que la refe del objeto sea igual a la refe buscada)
+  const result = asuntos.find(asunto => asunto.refe === refe);
+
+  // si lo encuentra lo devuelve
+  // si no existe, devuelve null (para evitar undefined)
+  return result || null;
+}
+
+// ------------------------------- Actualización de un asunto existente -------------------------------
+
+
 // instrucción para exportar el módulo y que otros puedan verlo y utilizarlo (modularidad de código)
 module.exports = {
-  nuevoRegistroAsunto,  // exportamos la función para crear el nuevo elemento del array (más tarde registro)
+  crearRegistroAsunto,  // exportamos la función para crear el nuevo elemento del array (más tarde registro)
+  consultarAsuntoRefe,      // exportamos la función para consultar un elemento (por refe) del array
   asuntos               // exportamos el array donde se guardan los elementos (cada asunto creado)
 }
