@@ -3,7 +3,7 @@
 Prototipo de Aplicación web desarrollado sin frameworks comerciales.
 
 **Finalidad principal:** Gestionar y organizar las asignaciones recibidas por el grupo de xxxxxx de la yyyyyyy
-**No cubre:** (a incluir a la vez que se vean las limitaciones)
+**Estado actual:** Fase 02 - Núcleo funcional (MH-1 completado)
 
 ## Principios
 
@@ -12,22 +12,21 @@ Prototipo de Aplicación web desarrollado sin frameworks comerciales.
 - Enfoque incremental
 - Sin frameworks comerciales
 
-## Documentación
+## Estructura del Proyecto
 
-Toda la planificación vive en la carpeta `planificacion/` y se versiona con Git:
-
-- `plan-global.md` → fases del proyecto
-- `backlog.md` → trabajo pendiente y priorizado
-- `agenda/agenda-xy.md` → foco activo
+- `backend/src/domain/` → Lógica de negocio (Entidades y Servicios).
+- `test/` → Batería de pruebas técnicas.
+- `planificacion/` → Documentación viva del proceso y agenda.
   
 ## Requisitos mínimos
 
 - **S.O.:** Linux - Ubuntu Desktop versión estable
-- **Runtime:** Node.js versión estable
+- **Runtime:** Node.js versión estable (v18+ recomendado)
 - **Herramientas:** Git
-- **Editor de código:** Visual Studio Code
-  
+
 ## Instrucciones de arranque en local
 
-- Actualmente el proyecto solo tiene un script de arranque vacío para preparar el entorno
-- En raíz del repositorio: ./start.sh
+El proyecto utiliza un script de automatización para validar la lógica antes del arranque:
+
+1. Dar permisos de ejecución (solo la primera vez): `chmod +x start.sh`
+2. Ejecutar validación y arranque: `./start.sh`

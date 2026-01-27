@@ -40,19 +40,21 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
    - [x] Función para consultar/leer registros
       > Commit: "FS02-MH1: Implementada función consulta-registro"
       > 3ae2f12 (HEAD -> fase-02) FS02-MH1: Implementada función consulta-registro
-   - [-] Función para actualizar registros (opcional inicial)
+   - [x] Función para actualizar registros (opcional inicial)
       > Commit: "FS02-MH1: Implementada función actualiza-registro"
-      >
+      > 8d4a896 (HEAD -> fase-02) FS02-MH1: Implementada función actualiza-registro
 
 3. **Validar la lógica en local con datos de prueba**
-   - [ ] Crear datos de prueba representativos
-   - [ ] Ejecutar funciones con datos de prueba y verificar resultados
+   - [x] Crear datos de prueba representativos
+   - [x] Ejecutar funciones con datos de prueba y verificar resultados
    - [ ] Ajustar funciones si hay errores
    - [ ] Commit: "FS02-MH1: Validada lógica central con datos de prueba"
+      > 
 
 4. **Consolidación del mini-hito**
+   - [ ] Vincular lógica core en `index.js` y automatizar arranque/test en `start.sh`
    - [ ] Verificar que todas las funciones y estructuras están operativas
-   - [ ] Commit final del mini-hito: "FS02-MH1 completado — Lógica central básica operativa"
+   - [ ] Commit final del mini-hito: "FS02-MH1 completado — Lógica central básica y entorno de arranque operativos"
 
 **Resultado esperado:** Lógica central operativa y comprobada con datos de ejemplo.
 

@@ -6,7 +6,7 @@
  */
 
 // importación de la clase clase-Asunto.js (referencia obligatoria para modularidad de gestion-Asunto.js)
-const Asunto = require('../clases/clase-Asunto');
+const Asunto = require('../entities/Asunto');
 
 // crear array para guardar el registro temporal (en memoria) de Asunto
   // se declara como const para asegurar que siempre se mantiene la misma referencia durante la ejecución
@@ -134,6 +134,7 @@ function actualizarAsunto(actual, {
 
   // Devuelve el objeto `[actual]` ya modificado
   return actual || null;
+}
 
 // ------------------------- Exportación del módulo (otros pueden utilizarlo) -------------------------
 
