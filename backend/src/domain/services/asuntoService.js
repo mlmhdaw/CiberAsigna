@@ -1,11 +1,11 @@
-// gestion-Asunto.js
+// asuntoService.js
 
 /**
  * GESTIÓN DE ASUNTOS
  * Este módulo centraliza la lógica de creación y almacenamiento temporal de la entidad Asunto.
  */
 
-// importación de la clase clase-Asunto.js (referencia obligatoria para modularidad de gestion-Asunto.js)
+// importación de la clase Asunto.js (referencia obligatoria para modularidad de asuntoService.js)
 const Asunto = require('../entities/Asunto');
 
 // crear array para guardar el registro temporal (en memoria) de Asunto
@@ -46,7 +46,7 @@ function crearRegistroAsunto({refe = null,
   // Esto permite que el superior pueda recuperar su "borrador" más tarde
   // creo una variable `[id]` para almacenar el número de id que debe llevar el nuevo elemento del array
   const id = asuntos.length + 1;
-  // creo un elemento (instancia) del tipo Asunto (clase-Asunto.js) para trabajar localmente (dentro de la función)
+  // creo un elemento (instancia) del tipo Asunto (Asunto.js) para trabajar localmente (dentro de la función)
   // con esta instrucción, en automático, el nuevo elemento toma id = id generado (último + 1)
   const asunto = new Asunto(id);
 
@@ -61,7 +61,7 @@ function crearRegistroAsunto({refe = null,
   // persistir, en memoria, el elemento del array
   asuntos.push(asunto);
 
-  // devolver asunto con sus atributos al módulo superior (quien ha llamado a gsteion-Asunto.js)
+  // devolver asunto con sus atributos al módulo superior (quien ha llamado a asuntoService.js)
   return asunto;
 }
 

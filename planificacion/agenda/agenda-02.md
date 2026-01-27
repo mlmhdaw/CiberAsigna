@@ -8,7 +8,7 @@ Tener la funcionalidad central de la aplicación operativa de extremo a extremo,
 
 ## Siguiente acción
 
-> Completar check 1 - punto 2 - mini-hito 1
+> Completar check 1 - punto 4 - mini-hito 1
 
 ---
 
@@ -47,14 +47,25 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
 3. **Validar la lógica en local con datos de prueba**
    - [x] Crear datos de prueba representativos
    - [x] Ejecutar funciones con datos de prueba y verificar resultados
-   - [ ] Ajustar funciones si hay errores
-   - [ ] Commit: "FS02-MH1: Validada lógica central con datos de prueba"
-      > 
+   - [x] Ajustar funciones si hay errores
+   - [x] Commit: "FS02-MH1: Validada lógica central con datos de prueba; actualización árbol y documentación"
+      > ca4f4f2 (HEAD -> fase-02) FS02-MH1: Validada lógica central con datos de prueba; actualización árbol y documentación
 
-4. **Consolidación del mini-hito**
-   - [ ] Vincular lógica core en `index.js` y automatizar arranque/test en `start.sh`
-   - [ ] Verificar que todas las funciones y estructuras están operativas
-   - [ ] Commit final del mini-hito: "FS02-MH1 completado — Lógica central básica y entorno de arranque operativos"
+4. **Implementar servicios para Funcionario (Func) y Organismo (Org)**
+   - [x] Crear funcService.js con funciones de creación, consulta y paso a histórico
+      > Commit: "FS02-MH1: Implementado funcService con gestión de creación, consulta y actualización"
+      >
+   - [] Crear orgService.js con funciones de creación y consulta
+      > Commit: "FS02-MH1: Implementado orgService con funciones de creación y consulta de organismos"
+      >
+   - [] Validar la creación de datos semilla en test/asunto.test.js para asegurar que las IDs coinciden
+   - [] Commit: "FS02-MH1: Implementada gestión completa (CRUD básico) de Func y Org"
+
+5. **Consolidación del mini-hito**
+   - [] Vincular todos los servicios (asunto, func, org) en index.js
+   - [] Automatizar arranque/test integral en start.sh
+   - [] Verificar que el ecosistema de entidades está operativo
+   - [] Commit final del mini-hito: "FS02-MH1 completado — Ecosistema de lógica central y entorno operativos"
 
 **Resultado esperado:** Lógica central operativa y comprobada con datos de ejemplo.
 
