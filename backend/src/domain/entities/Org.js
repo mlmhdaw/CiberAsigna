@@ -15,3 +15,5 @@ class Org {
     }
   }
 }
+
+module.exports = Org;

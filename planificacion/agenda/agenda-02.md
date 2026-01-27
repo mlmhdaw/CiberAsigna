@@ -52,10 +52,10 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
       > ca4f4f2 (HEAD -> fase-02) FS02-MH1: Validada lógica central con datos de prueba; actualización árbol y documentación
 
 4. **Implementar servicios para Funcionario (Func) y Organismo (Org)**
-   - [x] Crear funcService.js con funciones de creación, consulta y paso a histórico
+   - [x] Crear funcService.js con funciones de creación, consulta, paso a histórico y actualización
       > Commit: "FS02-MH1: Implementado funcService con gestión de creación, consulta y actualización"
-      >
-   - [] Crear orgService.js con funciones de creación y consulta
+      > b031b24 (HEAD -> fase-02) FS02-MH1: Implementado funcService con gestión de creación, consulta y actualización
+   - [-] Crear orgService.js con funciones de creación y consulta
       > Commit: "FS02-MH1: Implementado orgService con funciones de creación y consulta de organismos"
       >
    - [] Validar la creación de datos semilla en test/asunto.test.js para asegurar que las IDs coinciden

@@ -23,3 +23,5 @@ class Func {
     }
   }
 }
+
+module.exports = Func;

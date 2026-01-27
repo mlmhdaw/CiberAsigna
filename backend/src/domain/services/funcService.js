@@ -77,7 +77,7 @@ function consultarFunc({ncp}) {
  /**
  * Función para modificar un registro de datos (funcionario creado previamente)
  * Implementa el patrón de modificación (una vez se ha localizado) sobre un elemento en un array (más tarde tabla)
- * @param {Func}       actual       - Asunto que se pasa (el buscado en `[consultarFunc()]`)
+ * @param {Func}          actual      - funcionario que se pasa (el buscado en `[consultarFunc()]`)
  * @param {Object}       cambios      - Objeto con los datos a incluir
  * @param {string|null}  cambios.ncp  - Nueva número de carnet profesional (solo por error al incluir y guardar)
  * @param {string|null}  cambios.cat  - Nueva categoría profesional
