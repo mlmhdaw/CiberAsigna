@@ -55,17 +55,21 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
    - [x] Crear funcService.js con funciones de creación, consulta, paso a histórico y actualización
       > Commit: "FS02-MH1: Implementado funcService con gestión de creación, consulta y actualización"
       > b031b24 (HEAD -> fase-02) FS02-MH1: Implementado funcService con gestión de creación, consulta y actualización
-   - [-] Crear orgService.js con funciones de creación y consulta
+   - [x] Crear orgService.js con funciones de creación y consulta
       > Commit: "FS02-MH1: Implementado orgService con funciones de creación y consulta de organismos"
+      > 75a623d (HEAD -> fase-02) FS02-MH1: Implementado orgService con funciones de creación y consulta de organismos
+   - [] Validación técnica con tests unitarios
+      > Commit: "FS02-MH1: Validada lógica de funcService y de orgService con test unitarios y datos de prueba"
       >
-   - [] Validar la creación de datos semilla en test/asunto.test.js para asegurar que las IDs coinciden
-   - [] Commit: "FS02-MH1: Implementada gestión completa (CRUD básico) de Func y Org"
+   - [] Validación de ecosistema con test de integración
+      > Commit: "FS02-MH1: Validada integración global de entidades en global.test.js"
+      >
 
 5. **Consolidación del mini-hito**
    - [] Vincular todos los servicios (asunto, func, org) en index.js
-   - [] Automatizar arranque/test integral en start.sh
-   - [] Verificar que el ecosistema de entidades está operativo
-   - [] Commit final del mini-hito: "FS02-MH1 completado — Ecosistema de lógica central y entorno operativos"
+   - [] Automatización total en start.sh con ejecución en cadena: func.test && org.test && asunto.test && global.test && index.js
+   - [] Verificar que el sistema arranca limpiamente tras superar toda la batería de pruebas
+   - [] Commit final del mini-hito: "FS02-MH1 completado — Ecosistema de lógica central y automatización de arranque operativos"
 
 **Resultado esperado:** Lógica central operativa y comprobada con datos de ejemplo.
 
