@@ -37,10 +37,10 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
    - [x] Función para crear un registro de datos
       > Commit: "FS02-MH1: Implementada función nuevo-registro"
       > 7fd2f21 (HEAD -> fase-02) FS02-MH1: Implementada función nuevo-registro
-   - [-] Función para consultar/leer registros
+   - [x] Función para consultar/leer registros
       > Commit: "FS02-MH1: Implementada función consulta-registro"
-      >
-   - [ ] Función para actualizar registros (opcional inicial)
+      > 3ae2f12 (HEAD -> fase-02) FS02-MH1: Implementada función consulta-registro
+   - [-] Función para actualizar registros (opcional inicial)
       > Commit: "FS02-MH1: Implementada función actualiza-registro"
       >
 

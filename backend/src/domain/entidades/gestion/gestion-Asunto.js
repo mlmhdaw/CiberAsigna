@@ -35,7 +35,12 @@ const asuntos = [];
  * @returns {Asunto}                - La instancia del asunto recién creada.
  */
 
-function crearRegistroAsunto({refe = null, fid = null, oid = null, rese = null, fece = null, est = null}) {
+function crearRegistroAsunto({refe = null, 
+                              fid  = null, 
+                              oid  = null, 
+                              rese = null, 
+                              fece = null, 
+                              est = null}) {
     
   // generar el id único (último + 1)
   // Esto permite que el superior pueda recuperar su "borrador" más tarde
@@ -74,7 +79,7 @@ function consultarAsuntoRefe({refe}) {
 
   // verificar que, antes de generar la búsqueda, se ha introducido un valor para `[refe]`
   if (!refe) return null;
-  
+
   // El método .find recorre el array (hasta el final o encontrar el elemento) 'asuntos'  
   // y devuelve el elemento que cumpla la condición (que la refe del objeto sea igual a la refe buscada)
   const result = asuntos.find(asunto => asunto.refe === refe);
@@ -86,10 +91,55 @@ function consultarAsuntoRefe({refe}) {
 
 // ------------------------------- Actualización de un asunto existente -------------------------------
 
+ /**
+ * Función para modificar un registro de datos (Asunto creado previamente)
+ * Implementa el patrón de modificación (una vez se ha localizado) sobre un elemento en un array (más tarde tabla)
+ * @param {Asunto} actual   - Asunto que se pasa (el buscado en `[consultarAsuntoRefe()]`)
+ * @param {Object} cambios  - Objeto con los datos a incluir
+ * @param {string|null} cambios.refe - Nueva referencia de entrada
+ * @param {string|null} cambios.refs - Nueva referencia de salida
+ * @param {string|null} cambios.fece - Nueva fecha de entrada
+ * @param {string|null} cambios.fecs - Nueva fecha de salida
+ * @param {string|null} cambios.rese - Nuevo resumen de entrada (máximo 500 caracteres)
+ * @param {string|null} cambios.ress - Nuevo resumen de salida (máximo 500 caracteres)
+ * @param {number|null} cambios.oid  - Nuevo id de la organización asociada (entidad Org)
+ * @param {number|null} cambios.fid  - Nuevo id de funcionario asociado (entidad Func)
+ * @param {string|null} cambios.est  - Nuevo estado
+ */
 
-// instrucción para exportar el módulo y que otros puedan verlo y utilizarlo (modularidad de código)
+function actualizarAsunto(actual, {
+                          refe = null,
+                          refs = null, 
+                          fece = null, 
+                          fecs = null, 
+                          rese = null, 
+                          ress = null, 
+                          oid  = null, 
+                          fid  = null, 
+                          est  = null}) {
+
+  // verificar que, antes de tratar de actualizar, existe el asunto o registro`[actual]]`
+  if (!actual) return null;
+
+  // actualizar solo aquellos atributos que han sufrido cambios
+  if (refe !== null) actual.refe = refe;
+  if (refs !== null) actual.refs = refs;
+  if (fece !== null) actual.fece = fece;
+  if (fecs !== null) actual.fecs = fecs;
+  if (rese !== null) actual.rese = rese;
+  if (ress !== null) actual.ress = ress;
+  if (oid  !== null) actual.oid  = oid;
+  if (fid  !== null) actual.fid  = fid;
+  if (est  !== null) actual.est  = est;
+
+  // Devuelve el objeto `[actual]` ya modificado
+  return actual || null;
+
+// ------------------------- Exportación del módulo (otros pueden utilizarlo) -------------------------
+
 module.exports = {
   crearRegistroAsunto,  // exportamos la función para crear el nuevo elemento del array (más tarde registro)
-  consultarAsuntoRefe,      // exportamos la función para consultar un elemento (por refe) del array
+  consultarAsuntoRefe,  // exportamos la función para consultar un elemento (por refe) del array
+  actualizarAsunto,     // exportamos la función para actualizar un elemento del array
   asuntos               // exportamos el array donde se guardan los elementos (cada asunto creado)
 }
