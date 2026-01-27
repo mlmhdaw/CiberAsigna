@@ -6,7 +6,7 @@
 */
 
 // importación de la clase Org.js (referencia obligatoria para modularidad de orgService.js)
-const Org = require('..entities/Org');
+const Org = require('../entities/Org');
 
 // crear array para guardar el registro temporal (en memoria) de Org
 const organismos = [];

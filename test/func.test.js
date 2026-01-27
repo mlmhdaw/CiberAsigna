@@ -40,7 +40,7 @@ if (funcError) {
         hist: "true" 
     });
     
-    if (funcError.ncp === "234567" && funcError.apel === "Dato erróneo") {
+    if (funcError.ncp === "123456" && funcError.apel === "Dato erróneo") {
         console.log(" Éxito: Registro error actualizado a '234567'.");
     }
 }
