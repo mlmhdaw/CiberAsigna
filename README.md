@@ -1,4 +1,6 @@
-# Proyecto CiberAsigna
+# README.md - ciberasigna/README.md
+
+## Proyecto CiberAsigna
 
 Prototipo de Aplicación web desarrollado sin frameworks comerciales.
 
@@ -15,8 +17,9 @@ Prototipo de Aplicación web desarrollado sin frameworks comerciales.
 ## Estructura del Proyecto
 
 - `backend/src/domain/` → Lógica de negocio (Entidades y Servicios).
-- `test/` → Batería de pruebas técnicas.
+- `test/` → Batería de pruebas técnicas y de integración.
 - `planificacion/` → Documentación viva del proceso y agenda.
+- `start.sh` → Script de orquestación y validación.
   
 ## Requisitos mínimos
 
@@ -28,5 +31,7 @@ Prototipo de Aplicación web desarrollado sin frameworks comerciales.
 
 El proyecto utiliza un script de automatización para validar la lógica antes del arranque:
 
-1. Dar permisos de ejecución (solo la primera vez): `chmod +x start.sh`
-2. Ejecutar validación y arranque: `./start.sh`
+1. **Permisos:** Dar permisos de ejecución (solo la primera vez): `chmod +x start.sh`
+2. **Arranque:** Ejecutar validación y arranque: `./start.sh`
+
+*El script asegura que todos los tests pasen antes de iniciar el sistema. Si hay errores en la lógica, el sistema se detendrá por seguridad.*

@@ -73,7 +73,12 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
    - [x] Commit final del mini-hito: "FS02-MH1 completado — Ecosistema de lógica central y automatización de arranque operativos"
       > 7d1a733 (HEAD -> fase-02) FS02-MH1 completado — Ecosistema de lógica central y automatización de arranque operativos
 
-**Push a GitHub de la Fase 02 - MH-1:**
+6. **Push a GitHub de la Fase 02 - MH-1:**
+   - [x] Vincular alias `origin` con la URL de GitHub (`git remote add`)
+   - [x] Subida de la base del proyecto (`git push origin main`)
+   - [-] Actualización de archivos README.md
+      > Commit: "FS02-MH1 - Docs: READMEs definitivos con requisitos y finalidad"
+   - [-] Subida del progreso actual (`git push origin fase-02`)
 
 **Resultado esperado:** Lógica central operativa y comprobada con datos de ejemplo.
 
