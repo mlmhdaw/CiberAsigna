@@ -58,12 +58,12 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
    - [x] Crear orgService.js con funciones de creación y consulta
       > Commit: "FS02-MH1: Implementado orgService con funciones de creación y consulta de organismos"
       > 75a623d (HEAD -> fase-02) FS02-MH1: Implementado orgService con funciones de creación y consulta de organismos
-   - [-] Validación técnica con tests unitarios
+   - [x] Validación técnica con tests unitarios
       > Commit: "FS02-MH1: Validada lógica de funcService y de orgService con test unitarios y datos de prueba"
       > ea6aff8 (HEAD -> fase-02) FS02-MH1: Validada lógica de funcService con test unitario y datos de prueba
-      > "FS02-MH1: Validada lógica de orgService con test unitario y datos de prueba"
-   - [] Validación de ecosistema con test de integración
-      > Commit: "FS02-MH1: Validada integración global de entidades en global.test.js"
+      > e016c4d (HEAD -> fase-02) FS02-MH1: Validada lógica de orgService con test unitario y datos de prueba
+   - [-] Validación de ecosistema con test de integración
+      > Commit: "FS02-MH1: Validada integración global de entidades en global.test.js y mejoras en test unitarios"
       >
 
 5. **Consolidación del mini-hito**

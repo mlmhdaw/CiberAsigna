@@ -10,7 +10,7 @@ console.log("=== CHECK 3 MH-1 FASE 02: VALIDACIÓN DE LÓGICA CENTRAL ===");
 // --------------- PASO 1: Crear datos de prueba representativos ---------------
 
 console.log("\n1. Creando datos de prueba...");
-crearRegistroAsunto({ refe: "EXP-001", fid: 1, oid: 10, rese: "Asunto completo", est: "ASIGNADO" });
+crearRegistroAsunto({ refe: "EXP-001", fid: 1, oid: 1, rese: "Asunto completo", est: "ASIGNADO" });
 crearRegistroAsunto({ rese: "Borrador sin referencia", est: "BORRADOR" }); // refe será null
 crearRegistroAsunto({ refe: "ERROR-99", rese: "Dato erróneo", est: "BORRADOR" });
 

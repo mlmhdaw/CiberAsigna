@@ -10,8 +10,8 @@ console.log("=== CHECK 4 MH-1 FASE 02: VALIDACIÓN DE LÓGICA DE ORG ===");
 // --------------- PASO 1: Crear datos de prueba representativos ---------------
 
 console.log("\n1. Creando datos de prueba...");
-crearRegistroOrg({nom: "primero"});
-crearRegistroOrg({nom: "BUSQUEDA PARCIAL"});
+crearRegistroOrg({nom: "Organismo Primero"});
+crearRegistroOrg({nom: "Organismo Segundo"});
 crearRegistroOrg({nom: null});
 crearRegistroOrg({nom: "error"});
 
@@ -32,8 +32,8 @@ const resultado = consultarOrg({nom: "primero"});
 // guardo, en una variable (buscado), lo almacenado en resultado[0]
 const buscado = resultado[0];
 
-if (buscado && buscado.nom === "primero") {
-    console.log("Éxito: Registro 'primero' localizado correctamente.");
+if (buscado && buscado.nom.toLowerCase().includes("primero")) {
+    console.log("Éxito: Registro 'Organismo Primero' localizado correctamente.");
 }
 
 // ----------- PASO 4: Probar Actualización (Ajustar si hay errores) -----------
@@ -41,10 +41,10 @@ if (buscado && buscado.nom === "primero") {
 console.log("\n4. Probando actualización de errores...");
 const orgError = consultarOrg({ nom: "error" });
 if (orgError) {
-  actualizarOrg(orgError, {nom: "tercero"});
+  actualizarOrg(orgError, {nom: "Organismo Tercero"});
     
-if (orgError.nom === "tercero") {
-  console.log(" Éxito: Registro error actualizado a 'tercero'.");
+if (orgError.nom === "Organismo Tercero") {
+  console.log(" Éxito: Registro error actualizado a 'Organismo Tercero'.");
 }
 }
 
