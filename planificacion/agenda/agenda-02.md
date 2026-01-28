@@ -62,15 +62,18 @@ Definir y probar la lógica principal de la aplicación, dejando la base lista p
       > Commit: "FS02-MH1: Validada lógica de funcService y de orgService con test unitarios y datos de prueba"
       > ea6aff8 (HEAD -> fase-02) FS02-MH1: Validada lógica de funcService con test unitario y datos de prueba
       > e016c4d (HEAD -> fase-02) FS02-MH1: Validada lógica de orgService con test unitario y datos de prueba
-   - [-] Validación de ecosistema con test de integración
+   - [x] Validación de ecosistema con test de integración
       > Commit: "FS02-MH1: Validada integración global de entidades en global.test.js y mejoras en test unitarios"
-      >
+      > ef83464 (HEAD -> fase-02) FS02-MH1: Validada integración global de entidades en global.test.js y mejoras en test unitarios
 
 5. **Consolidación del mini-hito**
-   - [] Vincular todos los servicios (asunto, func, org) en index.js
-   - [] Automatización total en start.sh con ejecución en cadena: func.test && org.test && asunto.test && global.test && index.js
-   - [] Verificar que el sistema arranca limpiamente tras superar toda la batería de pruebas
-   - [] Commit final del mini-hito: "FS02-MH1 completado — Ecosistema de lógica central y automatización de arranque operativos"
+   - [x] Vincular todos los servicios (asunto, func, org) en index.js
+   - [x] Automatización total en start.sh con ejecución en cadena: func.test && org.test && asunto.test && global.test && index.js
+   - [x] Verificar que el sistema arranca limpiamente tras superar toda la batería de pruebas
+   - [x] Commit final del mini-hito: "FS02-MH1 completado — Ecosistema de lógica central y automatización de arranque operativos"
+      > 7d1a733 (HEAD -> fase-02) FS02-MH1 completado — Ecosistema de lógica central y automatización de arranque operativos
+
+**Push a GitHub de la Fase 02 - MH-1:**
 
 **Resultado esperado:** Lógica central operativa y comprobada con datos de ejemplo.
 
